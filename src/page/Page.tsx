@@ -8,7 +8,6 @@ import SectionProjects from "../sections/SectionProjects";
 import SectionServicesWithTech from "../sections/SectionServicesWithTech";
 import AppBarLendingWithMob from "../components/AppBarLendingWithMob";
 import AppBarCss from "../components/AppBarCss";
-import SectionService from "../sections/SectionServices";
 import SectionFeedback from "../sections/SectionFeedback";
 import SectionContactUs from "../sections/SectionContactUs";
 import ContactUs from "../components/ContactUs";
@@ -20,7 +19,6 @@ const Page = () => {
         {/*<AppBarCss/>*/}
         <SectionHeader/>
         <SectionAboutUs/>
-        <SectionService/>
         {/*<SectionServicesWithTech/>*/}
         <SectionProjects/>
         <SectionTeam/>

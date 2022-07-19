@@ -1,6 +1,8 @@
 {
   "about us": "О нас",
   "main_title": "Лаборатория искусственного интеллекта и инноваций",
+  "main_par": "Давайте немного поговорим о том, какие симптомы могут быть у медленного компьютера.",
+  "main_btn": "свяжись с нами",
   "about_us_text": "Внедряем новые подходы как в простые, так и в комплексные процессы. Наша цель сделать сложные вещи простыми и доступными.\nПоказываем, что невыполнимых задач нет, если есть опыт, знания и желание. Мы - связующее звено между технологиями искусственного интеллекта и человеком.",
   "competencies": "Kомпетенции",
   "services_left_competencies_title": "Оценка рентабельности ",
@@ -15,9 +17,11 @@
   "tensorflow_tech_description": "powerful library",
   "team": "Команда",
   "teamTitleBlock": "Ключевые эксперты",
+  "teamTitleBlock-p": "Момент в жизни любого начинающего астронома, когда пришло время купить этот первый телескоп. Интересно подумать о настройке собственного просмотра.",
   "projects": "Ключевые наработки",
-  "projects_full_title": "Проекты / Продукты / Инструменты",
-  "open_pdf": "Открыть PDF",
+  "projects_full_title": "Проекты",
+  "projects_full_par": "Момент в жизни любого начинающего астронома, когда пришло время купить этот первый телескоп. Интересно подумать о настройке собственного просмотра.",
+  "open_pdf": "Скачать PDF",
   "project_message_tagger": "Система мониторинга NPS",
   "project_message_tagger_description": "ML-решение на основе NLP-алгоритмов, выполняющее распознавание текста для автоматического мониторинга лояльности клиентов в социальных сетях с функцией раннего оповещения.",
   "project_turing": "Распознавание компаний (Банк)",
@@ -35,6 +39,8 @@
   "project_under_development": "В разработке",
   "starter_team": "NLP Starter Team",
   "close": "Закрыть",
-  "copyrights_text": "The text and graphic content of the website belongs to Semiotics Lab and cannot be used by other\n                resources without our permission and without the link to the source."
+  "copyrights_text": "The text and graphic content of the website belongs to Semiotics Lab and cannot be used by other\n                resources without our permission and without the link to the source.",
+  "feedbackTitleBlock": "Отзывы",
+  "feedbackDescrBlock": "Момент в жизни любого начинающего астронома, когда пора это покупать"
 
 }

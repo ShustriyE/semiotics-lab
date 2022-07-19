@@ -26,22 +26,17 @@ const projects: Array<InterfaceCardProject> = [
         keyDescriptionProject: "project_wish_master_description",
     },
     {
-        filePath: "/pdf/E-com_Benchmark_Analysis.pdf",
-        imgPath: "/projects/image_6.png",
-        keyTitleProject: "project_benchmark_analysis",
-        keyDescriptionProject: "project_benchmark_analysis_description",
+        filePath: "#",
+        imgPath: "/projects/image_5.png",
+        keyTitleProject: "project_sound_processing",
+        keyDescriptionProject: "project_sound_processing_description",
+        // underDevelopment: true,
     },
     {
         filePath: "/pdf/Поиск.pdf",
         imgPath: "/projects/image_7.png",
         keyTitleProject: "project_search",
         keyDescriptionProject: "project_search_description",
-        // underDevelopment: true,
-    },
-    {
-        imgPath: "/projects/image_5.png",
-        keyTitleProject: "project_sound_processing",
-        keyDescriptionProject: "project_sound_processing_description",
         // underDevelopment: true,
     },
 

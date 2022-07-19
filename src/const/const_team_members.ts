@@ -2,15 +2,23 @@ import {PropsCardTeamMember} from "../types/card_member";
 
 const team_members: Array<PropsCardTeamMember> = [
     {
-        imgPath: "/team/face_4.png",
-        keySpecialization: "potseluev_specialization",
-        keyMemberName: "potseluev_member_name",
-        keyMemberDescription: "potseluev_description",
+        imgPath: "/team/face_1.png",
+        keySpecialization: "liashenko_specialization",
+        keyMemberName: "liashenko_member_name",
+        keyMemberDescription: "liashenko_description",
         contacts: {
-            email: "basil.potseluev@semiotics-lab.com",
-            linkedin: "http://linkedin.com/in/vasiliy-potseluev-952186121",
-            phone: "+380 66 604 64 23",
-            telegram: "basil_kisses",
+            email: "se.liashenko@temabit.com",
+            linkedin: "https://www.linkedin.com/in/sergeyliashenko/",
+        }
+    },
+    {
+        imgPath: "/team/face_2.png",
+        keySpecialization: "lytvynenko_specialization",
+        keyMemberName: "lytvynenko_member_name",
+        keyMemberDescription: "lytvynenko_description",
+        contacts: {
+            email: "teti.lytvynenko@temabit.com",
+            linkedin: "https://www.linkedin.com/in/tatiana-lytvynenko/",
         }
     },
     {
@@ -29,35 +37,27 @@ const team_members: Array<PropsCardTeamMember> = [
         }
     },
     {
-        imgPath: "/team/face_2.png",
-        keySpecialization: "lytvynenko_specialization",
-        keyMemberName: "lytvynenko_member_name",
-        keyMemberDescription: "lytvynenko_description",
+        imgPath: "/team/face_4.png",
+        keySpecialization: "potseluev_specialization",
+        keyMemberName: "potseluev_member_name",
+        keyMemberDescription: "potseluev_description",
         contacts: {
-            email: "teti.lytvynenko@temabit.com",
-            linkedin: "https://www.linkedin.com/in/tatiana-lytvynenko/",
+            email: "basil.potseluev@semiotics-lab.com",
+            linkedin: "http://linkedin.com/in/vasiliy-potseluev-952186121",
+            phone: "+380 66 604 64 23",
+            telegram: "basil_kisses",
         }
     },
-    {
-        imgPath: "/team/face_1.png",
-        keySpecialization: "liashenko_specialization",
-        keyMemberName: "liashenko_member_name",
-        keyMemberDescription: "liashenko_description",
-        contacts: {
-            email: "se.liashenko@temabit.com",
-            linkedin: "https://www.linkedin.com/in/sergeyliashenko/",
-        }
-    },
-    {
-        imgPath: "/team/face_5.png",
-        keySpecialization: "sargsian_specialization",
-        keyMemberName: "sargsian_member_name",
-        keyMemberDescription: "sargsian_description",
-        contacts: {
-            linkedin: "https://www.linkedin.com/in/lilith-sargsyan-/",
-            phone: "+37495090121"
-        }
-    },
+    // {
+    //     imgPath: "/team/face_5.png",
+    //     keySpecialization: "sargsian_specialization",
+    //     keyMemberName: "sargsian_member_name",
+    //     keyMemberDescription: "sargsian_description",
+    //     contacts: {
+    //         linkedin: "https://www.linkedin.com/in/lilith-sargsyan-/",
+    //         phone: "+37495090121"
+    //     }
+    // },
     // {
     //     imgPath: "/team/face_1.png",
     //     keySpecialization: "utkin_specialization",
