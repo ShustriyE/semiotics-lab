@@ -1,64 +1,123 @@
-import React from 'react';
-import {FeedbackStructure} from "../const/const_feedback";
-import Card from '@mui/material/Card';
-import {Avatar, Box, CardContent, CardMedia, Grid} from "@mui/material";
+import React from "react";
+import { FeedbackStructure } from "../const/const_feedback";
+import Card from "@mui/material/Card";
+import { Avatar, Box, CardContent, CardMedia, Grid } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const FeedbackCard = (props: FeedbackStructure) => {
-    const [t,] = useTranslation('translation');
-    console.log('width', props.width)
-    let height = (props?.width ? props.width * 0.25 : 150)
-    if (height > 300){
-        height = 300
-    }
+  const [t] = useTranslation("translation");
+  console.log("width", props.width);
+  let height = props?.width ? props.width * 0.25 : 150;
+  if (height > 300) {
+    height = 300;
+  }
 
-
-    return (
-        <Box sx={{width: '100%'}}>
-            <Box sx={{width: '80%', marginLeft: '10%', marginRight: "10%"}}>
-                <Card>
-                    <Grid container>
-                        <Grid item>
-                            <Card>
-                                <CardMedia
-                                    component="img"
-                                    height={height}
-                                    image={props.pathToImg}
-                                    alt={t(props.nameReviewer)}/>
-                            </Card>
-                        </Grid>
-                        <Grid item>
-                            <Card sx={{ maxWidth: 345}}>
-                                <CardContent>
-                                    <Typography variant="body2" color="text.secondary">
-                                        {t(props.feedback)}
-                                    </Typography>
-                                    <Grid container spacing={3}>
-                                        <Grid item>
-                                            <Typography gutterBottom variant="h5" component="div">
-                                                {t(props.nameReviewer)}
-                                            </Typography>
-                                            <Typography gutterBottom variant="h6" component="div">
-                                                {t(props.positionReviewer)}
-                                            </Typography>
-                                        </Grid>
-                                        <Grid item>
-                                            <Avatar
-                                                alt={t((props.nameReviewer))}
-                                                src={props.pathToLogoCompanyReviewer}
-                                                sx={{width: 56, height: 56}}
-                                            />
-                                        </Grid>
-                                    </Grid>
-                                </CardContent>
-                            </Card>
-                        </Grid>
+  return (
+    <Box sx={{ width: "100%" }}>
+      <Box sx={{ width: "80%", marginLeft: "10%", marginRight: "10%" }}>
+        <Card
+          sx={{
+            boxShadow: "none",
+            border: "0.1vw solid #D8D8D8",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            padding: "2vw",
+            gap: "1.1vw",
+            borderRadius: "1vw",
+          }}
+        >
+          <Card sx={{ boxShadow: "none" }}>
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              style={{
+                fontFamily: "Inter",
+                fontWeight: "400",
+                fontSize: "1vw",
+                lineHeight: "1.4vw",
+                color: "#585757",
+              }}
+            >
+              {t(props.feedback)}
+            </Typography>
+          </Card>
+          <Card sx={{ boxShadow: "none" }}>
+            <CardContent
+              style={{
+                padding: "0",
+              }}
+            >
+              <Grid container columnSpacing={33} columns={2} wrap={'nowrap'}>
+                <Grid item>
+                  <CardContent
+                  style={{
+                    padding: "0",
+                  }}>
+                    <Grid container spacing={1} columns={2} wrap={'nowrap'}>
+                      <Grid item>
+                        <CardMedia
+                          component="img"
+                          height={height}
+                          image={props.pathToImg}
+                          alt={t(props.nameReviewer)}
+                          style={{
+                            width: "2.6vw",
+                            height: "2.6vw",
+                            borderRadius: "50%",
+                          }}
+                        />
+                      </Grid>
+                      <Grid item>
+                        <Typography
+                          gutterBottom
+                          variant="h5"
+                          component="div"
+                          style={{
+                            fontFamily: "Inter",
+                            fontWeight: "600",
+                            fontSize: "1vw",
+                            lineHeight: "1.5vw",
+                            color: "#1C1C1C",
+                          }}
+                        >
+                          {t(props.nameReviewer)}
+                        </Typography>
+                        <Typography
+                          gutterBottom
+                          variant="h6"
+                          component="div"
+                          style={{
+                            fontFamily: "Inter",
+                            fontWeight: "400",
+                            fontSize: "0.8vw",
+                            lineHeight: "1.1vw",
+                            color: "#969696",
+                          }}
+                        >
+                          {t(props.positionReviewer)}
+                        </Typography>
+                      </Grid>
                     </Grid>
-                </Card>
-            </Box>
-        </Box>)
-
-
-}
+                  </CardContent>
+                </Grid>
+                <Grid item>
+                  <Avatar
+                    alt={t(props.nameReviewer)}
+                    src={props.pathToLogoCompanyReviewer}
+                    style={{
+                      width: "4vw",
+                      height: "auto",
+                    }}
+                  />
+                </Grid>
+              </Grid>
+            </CardContent>
+          </Card>
+        </Card>
+      </Box>
+    </Box>
+  );
+};
 export default FeedbackCard;

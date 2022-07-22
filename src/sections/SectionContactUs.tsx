@@ -89,7 +89,7 @@ const SectionContactUs = () => {
         <section id="contact-us">
             <Grid container>
                 <Grid item>
-                    <img src="/img_1.png" alt="Map" width="100%"/>
+                    <img src="/img_1.jpg" alt="Map" width="100%"/>
                 </Grid>
                 <Grid item>
                     <Card sx={{width: '100%'}}>

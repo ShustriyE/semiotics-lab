@@ -63,7 +63,7 @@ export default function AppBarLendingWithMob() {
     const dataLink: DataLink[] = [
         {
             title: t("about us"),
-            linkTo: "#about-us"
+            linkTo: "#aboutUs"
         }, {
             title: t("competencies"),
             linkTo: "#services"
@@ -71,8 +71,8 @@ export default function AppBarLendingWithMob() {
             title: t("projects"),
             linkTo: "#projects"
         }, {
-            title: t("feedbackBtnLink"),
-            linkTo: "#feedback"
+            title: t("team"),
+            linkTo: "#team"
         },
     ]
     const handleScroll = () => {
@@ -82,28 +82,49 @@ export default function AppBarLendingWithMob() {
 
 
     return (
-        <header>
+        <header style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+        }}>
 
             {/*<CssBaseline/>*/}
             {/*<HideOnScroll {...props}>*/}
             <AppBar
                 position="absolute"
                 // position="fixed"
-                style={{background: 'transparent', boxShadow: 'none',}}
+                style={{
+                    background: 'transparent', 
+                    boxShadow: 'none',
+                    padding: "0",
+                    margin: "0",
+                    maxWidth: "100%"
+                }}
                 sx={{
                     width: "100%",
-                    mx: "auto"
+                    mx: "auto",
                 }}
             >
-                <Container maxWidth="xl">
+                <Container style={{
+                    margin: "0",
+                    padding: "0",
+                }}>
                     <Toolbar>
-                        <img id="logo-pos" src={"/icons/logo_main.svg"} alt="logo"
-                             onClick={() => setNewClick(countClick + 1)}/>
+                        <img 
+                        id="logo-pos" 
+                        src={"/icons/logo_main.svg"} 
+                        alt="logo"
+                        onClick={() => setNewClick(countClick + 1)} 
+                        style={{
+                            width: "15vw",
+                            margin: "0",
+                         }}/>
 
 
                         {/*<Box sx={{flexGrow:10}}/>*/}
                         <Box display="flex"
                              justifyContent="flex-end"
+                             alignItems="center"
                              sx={{flexGrow: 2, display: {xs: 'flex', md: 'none'}}}
                         >
                             <div id="block-lang-menu-pos">
@@ -153,7 +174,10 @@ export default function AppBarLendingWithMob() {
 
 
                         </Box>
-                        <Box display="flex" justifyContent="flex-end"
+                        <Box 
+                        display="flex" 
+                        justifyContent="flex-end" 
+                        alignItems="center"
                              sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}>
                             {/*<img id="logo-pos" src={"/icons/logo_main.svg"} alt="logo" onClick={() => setNewClick(countClick + 1)}/>*/}
 

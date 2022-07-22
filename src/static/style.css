@@ -34,7 +34,7 @@ header,
 #contact-us,
 #footer,
 .grid-wrapper {
-  width: 80vw;
+  width: 90vw;
 }
 
 section {
@@ -80,7 +80,6 @@ header {
   height: auto;
   z-index: 3;
   color: #fff;
-  padding: 10px 60px 40px 40px;
 }
 
 header img[alt="logo"] {
@@ -132,7 +131,7 @@ header img[alt="logo"] {
   font-weight: 700;
   font-size: 150%;
   box-shadow: 0px 0px 20px rgba(161, 101, 243, 0.2);
-  border-radius: 12px;
+  border-radius: 0.8vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -197,9 +196,6 @@ header img[alt="logo"] {
   grid-column-gap: 5%;
 }
 
-/* .aboutUs--column {
-} */
-
 .column--ttl-block {
   display: flex;
   align-items: center;
@@ -223,29 +219,14 @@ header img[alt="logo"] {
 
 /* projects */
 
-/* .projects--ttl {
-}
-
-.projects--p {
-} */
-
-/* #projects .grid-container {
-}
-
-.three-column {
-} */
-
 #projects .card {
   padding-bottom: 3vw;
 }
 
-/* #projects .card a {
-} */
-
 #projects .card > figure img {
   width: 23vw;
   height: auto;
-  border-radius: 8px;
+  border-radius: 0.5vw;
 }
 
 #projects .card .button {
@@ -284,22 +265,7 @@ header img[alt="logo"] {
   color: #000000;
 }
 
-/* #projects .card span.label {
-  color: #ff7438;
-  font-size: 20px;
-  font-weight: 600;
-  font-family: "Open Sans";
-  line-height: 24px;
-  vertical-align: middle;
-} */
-
 /* team */
-
-/* .team--ttl {
-}
-
-.team--par {
-} */
 
 .grid-container {
   display: grid;
@@ -365,17 +331,70 @@ header img[alt="logo"] {
   width: auto;
 }
 
-/* .two-column {
-} */
-
 /* feedback */
 
-.feedback--ttl {
-}
-.feedback--p {
+/* contact-us */
+
+.contactUsMapLink {
+  position: relative;
 }
 
-/* contact-us */
+.contactUsMapBlock {
+  width: 30vw;
+  height: 30%;
+  background-color: #fff;
+  z-index: 1;
+  position: absolute;
+  bottom: 8vw;
+  left: 4vw;
+  background: #ffffff;
+  border-radius: 0.5vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.8vw;
+}
+
+.contactUsMapBlock--header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9vw;
+  line-height: 1.5vw;
+  color: #1c1c1c;
+}
+
+.contactUsMapBlock--box-adress, .contactUsMapBlock--box-mail, .contactUsMapBlock--box-phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 10vw;
+}
+
+.contactUsMapBlock--box-mail {
+  margin-bottom: 1.7vw;
+}
+
+.contactUsMapBlock--adress-link, .contactUsMapBlock---phone-link {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 0.9vw;
+  line-height: 1.5vw;
+  color: #585757;
+}
+
+.contactUsMapBlock--email-link {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 0.9vw;
+  line-height: 1.5vw;
+  color: #ff8364;
+  white-space: nowrap;
+}
+
+.contactUsMapBlock---phone-link {
+  white-space: nowrap;
+}
 
 /* contact-us */
 
@@ -396,7 +415,9 @@ footer {
 }
 
 .footer--left {
-  /* margin-right: 25vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer--left img {
@@ -405,7 +426,6 @@ footer {
 
 .footer--list {
   padding: 0;
-  padding-left: 9%;
   list-style: none;
   display: flex;
 }
@@ -453,15 +473,15 @@ footer {
 }
 
 .container--left--social-box {
-    display: flex;
+  display: flex;
 }
 
 .container--left--social {
-    margin-right: 2.5%;
+  margin-right: 2.5%;
 }
 
 .container--left--social + a {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .container--left--phone {
@@ -514,4 +534,28 @@ footer {
   font-size: 97%;
   line-height: 150%;
   color: #585757;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  header,
+  #hero-section,
+  #aboutUs,
+  #projects,
+  #team,
+  #feedback,
+  #contact-us,
+  #footer,
+  .grid-wrapper {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-device-width: 912px) {
+  #hero-banner {
+    height: 50vh;
+  }
+
+  #footer {
+    height: 15vh;
+  }
 }

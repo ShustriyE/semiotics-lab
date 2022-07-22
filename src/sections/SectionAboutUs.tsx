@@ -7,7 +7,7 @@ const SectionService = () => {
 
   return (
     <section id="aboutUs">
-      <h2 className="aboutUs--ttl">{t("about us")}</h2>
+      <h2 className="aboutUs--ttl">{t("about_us")}</h2>
       <p className="aboutUs--p sections--decription">{t("about_us_text")}</p>
       <div className="grid-wrapper">
         <div className="grid-container three-column">
@@ -21,7 +21,7 @@ const SectionService = () => {
                   className="column--image"
                 />
               </figure>
-              <h3 className="column--ttl">{t("services_left_competencies_title")}</h3>
+              <h3 id="services" className="column--ttl">{t("services_left_competencies_title")}</h3>
             </div>
             <p className="column--p">{t("services_left_competencies_text")}</p>
           </div>

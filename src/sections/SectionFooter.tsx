@@ -36,7 +36,9 @@ const SectionFooter = () => {
         <div className="footer--right">
           <div className="footer--right-container--left">
             <div className="container--left-box">
-              <span className="container--left-header">Phone</span>
+              <span className="container--left-header">
+                {t("contact_phone")}
+              </span>
               <a
                 href="tel:522-423-7990"
                 className="container--left--phone"
@@ -48,7 +50,9 @@ const SectionFooter = () => {
               </a>
             </div>
             <div className="container--left-box">
-              <span className="container--left-header">Email</span>
+              <span className="container--left-header">
+                {t("contact_email")}
+              </span>
               <a
                 href="mailto:info@pixsellz.io"
                 className="container--left--email"
@@ -60,28 +64,34 @@ const SectionFooter = () => {
               </a>
             </div>
             <div className="container--left-box">
-              <span className="container--left-header">Social</span>
+              <span className="container--left-header">
+                {t("contact_social")}
+              </span>
               <div className="container--left--social-box">
-              <a href="#" className="container--left--social">
-                Twitter
-              </a>
-              <a href="#" className="container--left--social">
-                Facebook
-              </a>
+                <a href="#" className="container--left--social">
+                  Twitter
+                </a>
+                <a href="#" className="container--left--social">
+                  Facebook
+                </a>
               </div>
             </div>
           </div>
           <div className="footer--right-container--right">
             <div className="container--right-box">
-              <span className="container--right-header">California</span>
+              <span className="container--right-header">
+                {t("contact_adress_title")}
+              </span>
               <a href="#" className="container--right-adress">
-                21 Lebsack Harbor Apt. 276 Palo Alto, CA
+                {t("contact_adress_descr")}
               </a>
             </div>
             <div className="container--right-box">
-              <span className="container--right-header">New York</span>
+              <span className="container--right-header">
+                {t("contact_adress_title_2")}
+              </span>
               <a href="#" className="container--right-adress">
-                74 Howell Islands Suite 834 Rochester, NY
+                {t("contact_adress_descr_2")}
               </a>
             </div>
           </div>
