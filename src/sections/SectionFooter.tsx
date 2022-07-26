@@ -20,7 +20,7 @@ const SectionFooter = () => {
     <footer>
       <div id="footer">
         <div className="footer--left">
-          <img src="/icons/logo_colored.svg" alt="" width="275px" />
+          <img src="/icons/logo_colored.svg" alt="" />
           <ul className="footer--list">
             <li className="footer--list-item">
               <a href="#">First Link</a>

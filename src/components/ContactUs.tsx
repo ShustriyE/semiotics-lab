@@ -94,16 +94,16 @@ const ContactUs = () => {
     (prop: keyof State) => (event: React.ChangeEvent<HTMLInputElement>) => {
       setValues({ ...values, [prop]: event.target.value });
     };
-  let percent = 0.85;
-  let marginLeft = 0;
-  let spacing = 2;
+  // let percent = 0.85;
+  // let marginLeft = 0;
+  // let spacing = 2;
 
-  if (width > 1000) {
-    percent = 0.45;
-    marginLeft = 1;
-    spacing = 0;
-  }
-  const widthCard = width * percent;
+  // if (width > 1000) {
+  //   percent = 0.45;
+  //   marginLeft = 1;
+  //   spacing = 0;
+  // }
+  // const widthCard = width * percent;
   // console.log(widthCard, width, percent)
   const sendRequest = () => {
     //http://semiotics-lab.com:8001/save_request?name=Denis&email=Den20vekfox%40gmail.com&message=sdsadasdasd
@@ -129,19 +129,18 @@ const ContactUs = () => {
 
   return (
     <section id="contact-us">
-      <Stack sx={{ width: "100%" }} spacing={spacing}>
+      <Stack sx={{ width: "100%" }}>
         {alerts.map((msg, ind) => (
           <AlertW alertMessage={msg} key={`alert_${ind}`} />
         ))}
       </Stack>
       <Box
-        sx={{ marginLeft: `${marginLeft}%` }}
         style={{
           margin: "3vw 0",
         }}
       >
-        <Grid container spacing={2}>
-          <Grid item>
+        <div className="contact-us--box">
+          <div>
             <Card
               sx={{ maxWidth: "38vw", maxHeight: "34.2em" }}
               style={{
@@ -192,26 +191,27 @@ const ContactUs = () => {
                   </div>
                 </div>
                 <CardMedia
+                  className="contactUsMapImg"
                   component="img"
                   image="/img_1.jpg"
                   alt="green iguana"
                 />
               </a>
             </Card>
-          </Grid>
-          <Grid item>
+          </div>
+          <div>
             <Card
-              sx={{ width: widthCard }}
               style={{
                 boxShadow: "none",
-                width: "27vw",
               }}
+              className="contact-us--box-form"
             >
-              <CardContent>
+              <CardContent className="contact-us--formbox">
                 <Typography
                   gutterBottom
                   variant="h5"
                   component="div"
+                  className="contact-us--form-header"
                   style={{
                     fontFamily: "Montserrat",
                     fontWeight: "600",
@@ -237,7 +237,7 @@ const ContactUs = () => {
                 </Typography>
                 <br />
                 <Grid container direction="column" spacing={1}>
-                  <Grid item>
+                  <Grid item className="contactUs--container-input">
                     <TextField
                       required
                       fullWidth
@@ -252,7 +252,7 @@ const ContactUs = () => {
                       }}
                     />
                   </Grid>
-                  <Grid item>
+                  <Grid item className="contactUs--container-input">
                     <TextField
                       required
                       fullWidth
@@ -273,10 +273,14 @@ const ContactUs = () => {
                       autoFocus={false}
                       style={{
                         marginBottom: "0.5vw",
+                        paddingLeft: "0",
+                        paddingRight: "0",
+                        paddingTop: "0",
+                        paddingBottom: "0",
                       }}
                     />
                   </Grid>
-                  <Grid item>
+                  <Grid item className="contactUs--container-input">
                     <TextField
                       required
                       fullWidth
@@ -299,7 +303,7 @@ const ContactUs = () => {
                       variant="contained"
                       onClick={sendRequest}
                       color="secondary"
-                      endIcon={<SendRoundedIcon />}
+                      className="contactUsMapBlock--button"
                       style={{
                         display: "flex",
                         flexDirection: "row",
@@ -319,13 +323,19 @@ const ContactUs = () => {
                       }}
                     >
                       {t("ContactUsBtn")}
+                      <img
+                        src="/contactus/icon.svg"
+                        alt="#"
+                        className="contactUsMapBlock--button-icon"
+                        width={"20%"}
+                      />
                     </Button>
                   </Grid>
                 </Grid>
               </CardContent>
             </Card>
-          </Grid>
-        </Grid>
+          </div>
+        </div>
       </Box>
     </section>
   );

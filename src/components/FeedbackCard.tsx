@@ -9,8 +9,8 @@ const FeedbackCard = (props: FeedbackStructure) => {
   const [t] = useTranslation("translation");
   console.log("width", props.width);
   let height = props?.width ? props.width * 0.25 : 150;
-  if (height > 300) {
-    height = 300;
+  if (height > 700) {
+    height = 700;
   }
 
   return (
@@ -28,6 +28,7 @@ const FeedbackCard = (props: FeedbackStructure) => {
             borderRadius: "1vw",
           }}
         >
+          <img src="/feedback/icon_quotes.svg" alt="#" />
           <Card sx={{ boxShadow: "none" }}>
             <Typography
               variant="body2"
@@ -43,14 +44,25 @@ const FeedbackCard = (props: FeedbackStructure) => {
               {t(props.feedback)}
             </Typography>
           </Card>
-          <Card sx={{ boxShadow: "none" }}>
+          <Card 
+          sx={{ boxShadow: "none" }}
+          style={{
+            width: "100%",
+          }}>
             <CardContent
               style={{
                 padding: "0",
+                width: "100%",
               }}
             >
-              <Grid container columnSpacing={33} columns={2} wrap={'nowrap'}>
-                <Grid item>
+              <div 
+              style={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}>
+                <div>
                   <CardContent
                   style={{
                     padding: "0",
@@ -101,8 +113,8 @@ const FeedbackCard = (props: FeedbackStructure) => {
                       </Grid>
                     </Grid>
                   </CardContent>
-                </Grid>
-                <Grid item>
+                </div>
+                <div>
                   <Avatar
                     alt={t(props.nameReviewer)}
                     src={props.pathToLogoCompanyReviewer}
@@ -111,8 +123,8 @@ const FeedbackCard = (props: FeedbackStructure) => {
                       height: "auto",
                     }}
                   />
-                </Grid>
-              </Grid>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </Card>

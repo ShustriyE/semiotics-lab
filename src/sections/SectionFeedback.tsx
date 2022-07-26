@@ -20,7 +20,7 @@ const SectionFeedback = () => {
   });
   let percent = 60;
   if (width < 912) {
-    percent = 100;
+    percent = 90;
   } else {
     percent = 60;
   }
@@ -56,6 +56,7 @@ const SectionFeedback = () => {
               },
             }}
             navButtonsProps={{
+              className: "carousel--elem-arrow",
               style: {
                 backgroundColor: "#FFFFFF",
                 border: "0.1vw solid #DBDBDB",
