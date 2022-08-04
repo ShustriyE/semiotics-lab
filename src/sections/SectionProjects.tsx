@@ -13,9 +13,6 @@ const SectionProjects = () => {
         <h2 className="projects--ttl sections--header">
           {t("projects_full_title")}
         </h2>
-        <p className="projects--p sections--decription">
-          {t("projects_full_par")}
-        </p>
       </div>
       <div className="grid-container three-column">
         {projects.map((element, i) => (

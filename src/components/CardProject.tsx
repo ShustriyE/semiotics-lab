@@ -6,6 +6,7 @@ const CardProject = (props: InterfaceCardProject) => {
   const [t] = useTranslation("translation");
   return (
     <div className="card project-preview">
+      <div className="project-box">
       <figure>
         {/*//@ts-ignore*/}
         <img
@@ -21,7 +22,16 @@ const CardProject = (props: InterfaceCardProject) => {
           <></>
         )}
       </h3>
+      <h5 className="projectsType">
+        {t(props.keyUnderTitleProject)}{" "}
+        {props?.underDevelopment ? (
+          <span className="label">{t("project_under_development")}</span>
+        ) : (
+          <></>
+        )}
+      </h5>
       <p>{t(props.keyDescriptionProject)}</p>
+      </div>
       {props?.filePath ? (
         <a
           className="download button"

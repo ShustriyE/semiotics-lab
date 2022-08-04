@@ -11,9 +11,6 @@ const SectionTeam = () => {
     <section id="team">
       <div className="sections--header-box">
         <h2 className="team--ttl sections--header">{t("teamTitleBlock")}</h2>
-        <p className="team--par sections--decription">
-          {t("teamTitleBlock-p")}
-        </p>
       </div>
       <div className="grid-container two-column">
         {team_members.map((element, index) => (

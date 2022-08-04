@@ -14,7 +14,6 @@ const SectionHeader = () => {
     <div id="hero-banner">
       <section id="hero-section">
           <h1 className="hero-section-ttl">{t("main_title")}</h1>
-          <span className="hero-section-par">{t("main_par")}</span>
           <div className="hero-section-btn--cb" onClick={handleClick}>
             <span>{t("main_btn")}</span>
             <img src="/icons/sms-btn_icon.svg" alt="#" />

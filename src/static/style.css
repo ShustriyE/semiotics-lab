@@ -221,9 +221,12 @@ header img[alt="logo"] {
 
 #projects .card {
   padding-bottom: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#projects .card > figure img {
+#projects .card div > figure img {
   width: 23vw;
   height: auto;
   border-radius: 0.5vw;
@@ -249,15 +252,23 @@ header img[alt="logo"] {
   margin-left: 2%;
 }
 
-#projects .card h3 {
+#projects .card div h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.55vw;
-  line-height: 1.9vw;
+  line-height: 1.2vw;
   color: #000000;
 }
 
-#projects .card p {
+#projects .card div h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.8vw;
+  line-height: 0.5vw;
+  color: rgb(150, 150, 150);
+}
+
+#projects .card div p {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.05vw;
@@ -573,7 +584,7 @@ footer {
 
 @media only screen and (max-device-width: 912px) {
   #hero-banner {
-    height: 50vh;
+    height: 30vh;
   }
 
   #footer {

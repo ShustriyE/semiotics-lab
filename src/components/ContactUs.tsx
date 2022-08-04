@@ -171,10 +171,10 @@ const ContactUs = () => {
                         {t("contact_email")}
                       </span>
                       <a
-                        href="mailto:info@pixsellz.io"
+                        href="mailto:info@semiotics-lab.com"
                         className="contactUsMapBlock--email-link"
                       >
-                        info@pixsellz.io
+                        info@semiotics-lab.com
                       </a>
                     </div>
                     <div className="contactUsMapBlock--box-phone">
@@ -182,10 +182,10 @@ const ContactUs = () => {
                         {t("contact_phone")}
                       </span>
                       <a
-                        href="tel:276-184-6258"
+                        href="tel:+380666046423"
                         className="contactUsMapBlock---phone-link"
                       >
-                        276-184-6258
+                        +380666046423
                       </a>
                     </div>
                   </div>
@@ -221,19 +221,6 @@ const ContactUs = () => {
                   }}
                 >
                   {t("ContactUsHeader")}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  style={{
-                    fontFamily: "Montserrat",
-                    fontWeight: "400",
-                    fontSize: "0.9vw",
-                    lineHeight: "1.3vw",
-                    color: "#585757",
-                  }}
-                >
-                  {t("ContactUsDescr")}
                 </Typography>
                 <br />
                 <Grid container direction="column" spacing={1}>

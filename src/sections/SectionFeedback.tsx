@@ -33,9 +33,6 @@ const SectionFeedback = () => {
           <h2 className="feedback--ttl sections--header">
             {t("feedbackTitleBlock")}
           </h2>
-          <p className="feedback--p sections--decription">
-            {t("feedbackDescrBlock")}
-          </p>
         </div>
         <Box
           sx={{
