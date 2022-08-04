@@ -36,7 +36,7 @@
   "project_sound_processing_description": "Исследование возможностей сокращения затрат и проверки качества посредством обработки аудиозаписей разговоров Call-центра.",
 
 
-  "teamTitleBlock": "Key members",
+  "teamTitleBlock": "Команда",
   "potseluev_member_name": "Basil Potseluev",
   "potseluev_specialization": "Product & Delivery",
   "potseluev_description": "AI process development for Upselling, Churn, Fraud detection, Recommendation & Early warning Systems, etc. Background in Consulting EU, US, ME 5+ years (Deloitte, MasterCard advisors). Technological & Banking consultancy. Retail portfolio management. Risk Management, Payment & Activation Strategy.",
@@ -53,7 +53,7 @@
   "liashenko_specialization": "Language Processing Data Scientist",
   "liashenko_description": "Master’s degree in computer science. 3+ years of building NLP models in Python. Develop smart AI systems. Experience on end-to-end data science pipeline: problem scoping, research, data gathering, data analysis, modeling, developing, insights, visualizations and model implementation.",
 
-  "feedbackTitleBlock": "Feedbacks",
+  "feedbackTitleBlock": "Отзывы",
   "slaviogloReviewer_1": "Slavioglo Ivan",
   "slaviogloPosition_1": "VP Temabit",
   "slaviogloFeedback_1": "One of the most important indicators of a successful project for a business is a direct positive impact on a budget. The result-oriented approach of Semiotics team was crucial to our joint project. Thanks to tangible results in the form of cost-cutting by resources optimization.",
@@ -67,17 +67,17 @@
   "slaviogloPosition_4": "CTO, Ender Turing",
   "slaviogloFeedback_4": "Semiotic Lab is a great Value-Added Partner with deep Natural Language Processing expertise. We can rely on them in our joint projects for the part when customers need more hands and customized involvement in analytics",
 
-  "ContactUsHeader": "Contact Us",
-  "Name": "Name",
+  "ContactUsHeader": "Связаться с нами",
+  "Name": "Имя",
   "Email": "Email",
-  "Message": "Message",
-  "ContactUsBtn": "send now",
+  "Message": "Комментарий",
+  "ContactUsBtn": "Отправить",
   
-  "contact_phone": "Phone",
+  "contact_phone": "Телефон",
   "contact_email": "Email",
-  "contact_social": "Social",
-  "contact_adress_title": "Adress:",
-  "contact_adress_descr": "Kyiv, st. Instituska 18",
+  "contact_social": "Социальные сети",
+  "contact_adress_title": "Адрес:",
+  "contact_adress_descr": "Киев, ул. Институтская 18",
   
   "invalid_email": "invalid_email",
   "error": "error",
