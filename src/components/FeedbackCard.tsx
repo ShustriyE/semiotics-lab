@@ -121,6 +121,7 @@ const FeedbackCard = (props: FeedbackStructure) => {
                     style={{
                       width: "4vw",
                       height: "auto",
+                      borderRadius: "0",
                     }}
                   />
                 </div>

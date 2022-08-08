@@ -45,14 +45,14 @@ const projects: Array<InterfaceCardProject> = [
         keyDescriptionProject: "project_search_description",
         // underDevelopment: true,
     },
-    // {
-    //     filePath: "/pdf/Поиск.pdf",
-    //     imgPath: "/projects/image_7.png",
-    //     keyTitleProject: "project_benchmark_analysis",
-    //     keyUnderTitleProject: "project_under_benchmark_analysis",
-    //     keyDescriptionProject: "project_benchmark_analysis_description",
-    //     // underDevelopment: true,
-    // },
+    {
+        filePath: "/pdf/Поиск.pdf",
+        imgPath: "/projects/image_6.png",
+        keyTitleProject: "project_benchmark_analysis",
+        keyUnderTitleProject: "project_under_benchmark_analysis",
+        keyDescriptionProject: "project_benchmark_analysis_description",
+        // underDevelopment: true,
+    },
 
 ]
 
