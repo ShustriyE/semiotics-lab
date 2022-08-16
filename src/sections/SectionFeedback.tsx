@@ -18,11 +18,11 @@ const SectionFeedback = () => {
 
     window.addEventListener("resize", handleResize);
   });
-  let percent = 60;
+  let percent = 90;
   if (width < 912) {
-    percent = 90;
+    percent = 100;
   } else {
-    percent = 60;
+    percent = 90;
   }
   const margin = (100 - percent) / 2;
 
@@ -45,37 +45,19 @@ const SectionFeedback = () => {
             navButtonsAlwaysVisible={true}
             className="carousel--elem"
             navButtonsWrapperProps={{
-              style: {
-                position: "absolute",
-                height: "6vw",
-                backgroundColor: "transparent",
-                top: "calc(50% - 5vw)",
-              },
+              className: "carousel--elem-navButtonsWrapperProps",
             }}
             navButtonsProps={{
-              className: "carousel--elem-arrow",
-              style: {
-                backgroundColor: "#FFFFFF",
-                border: "0.1vw solid #DBDBDB",
-                color: "#969696",
-                boxShadow:
-                  "0px 1px 3px rgba(0, 0, 0, 0.05), 0px 2px 1px rgba(0, 0, 0, 0.03), 0px 1px 1px rgba(0, 0, 0, 0.04)",
-              },
+              className: "carousel--elem-navButtonsProps",
             }}
             indicatorIconButtonProps={{
-              style: {
-                color: "#DBDBDB",
-              },
+              className: "carousel--elem-indicatorIconButtonProps",
             }}
             activeIndicatorIconButtonProps={{
-              style: {
-                color: "#FF8364",
-              },
+              className: "carousel--elem-activeIndicatorIconButtonProps",
             }}
             indicatorContainerProps={{
-              style: {
-                marginTop: "2.6vw",
-              },
+              className: "carousel--elem-indicatorContainerProps",
             }}
           >
             {feedbacks.map((feedback, i) => (

@@ -14,71 +14,32 @@ const FeedbackCard = (props: FeedbackStructure) => {
   }
 
   return (
-    <Box sx={{ width: "100%" }}>
-      <Box sx={{ width: "80%", marginLeft: "10%", marginRight: "10%" }}>
-        <Card
-          sx={{
-            boxShadow: "none",
-            border: "0.1vw solid #D8D8D8",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            padding: "2vw",
-            gap: "1.1vw",
-            borderRadius: "1vw",
-          }}
-        >
+    <Box className="feedback-card-box">
+      <Box className="feedback-card-box-block">
+        <Card className="feedback-body">
           <img src="/feedback/icon_quotes.svg" alt="#" />
-          <Card sx={{ boxShadow: "none" }}>
+          <Card className="feedback-box-text">
             <Typography
               variant="body2"
               color="text.secondary"
-              style={{
-                fontFamily: "Inter",
-                fontWeight: "400",
-                fontSize: "1vw",
-                lineHeight: "1.4vw",
-                color: "#585757",
-              }}
+              className="feedback-text"
             >
               {t(props.feedback)}
             </Typography>
           </Card>
-          <Card 
-          sx={{ boxShadow: "none" }}
-          style={{
-            width: "100%",
-          }}>
-            <CardContent
-              style={{
-                padding: "0",
-                width: "100%",
-              }}
-            >
-              <div 
-              style={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}>
+          <Card className="feedback-rewiever-block">
+            <CardContent className="feedback-rewiever-block-min">
+              <div className="feedback-rewiever-block-flex">
                 <div>
-                  <CardContent
-                  style={{
-                    padding: "0",
-                  }}>
-                    <Grid container spacing={1} columns={2} wrap={'nowrap'}>
+                  <CardContent className="feedback-rewiever-block-padding">
+                    <Grid container spacing={1} columns={2} wrap={"nowrap"}>
                       <Grid item>
                         <CardMedia
                           component="img"
                           height={height}
                           image={props.pathToImg}
                           alt={t(props.nameReviewer)}
-                          style={{
-                            width: "2.6vw",
-                            height: "2.6vw",
-                            borderRadius: "50%",
-                          }}
+                          className="feedback-rewiever-img"
                         />
                       </Grid>
                       <Grid item>
@@ -86,13 +47,7 @@ const FeedbackCard = (props: FeedbackStructure) => {
                           gutterBottom
                           variant="h5"
                           component="div"
-                          style={{
-                            fontFamily: "Inter",
-                            fontWeight: "600",
-                            fontSize: "1vw",
-                            lineHeight: "1.5vw",
-                            color: "#1C1C1C",
-                          }}
+                          className="feedback-rewiever-name"
                         >
                           {t(props.nameReviewer)}
                         </Typography>
@@ -100,13 +55,7 @@ const FeedbackCard = (props: FeedbackStructure) => {
                           gutterBottom
                           variant="h6"
                           component="div"
-                          style={{
-                            fontFamily: "Inter",
-                            fontWeight: "400",
-                            fontSize: "0.8vw",
-                            lineHeight: "1.1vw",
-                            color: "#969696",
-                          }}
+                          className="feedback-rewiever-position"
                         >
                           {t(props.positionReviewer)}
                         </Typography>
@@ -118,11 +67,7 @@ const FeedbackCard = (props: FeedbackStructure) => {
                   <Avatar
                     alt={t(props.nameReviewer)}
                     src={props.pathToLogoCompanyReviewer}
-                    style={{
-                      width: "4vw",
-                      height: "auto",
-                      borderRadius: "0",
-                    }}
+                    className="feedback-rewiever-logo"
                   />
                 </div>
               </div>

@@ -1,8 +1,8 @@
 import React from 'react';
-import '../static/style.css';
 import {Contacts, PropsCardTeamMember} from "../types/card_member";
 import {useTranslation} from "react-i18next";
 import copy from "clipboard-copy";
+import '../static/style.css';
 
 
 const ContactsCardMember = (props: Contacts) => {

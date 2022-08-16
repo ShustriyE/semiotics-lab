@@ -1,8 +1,8 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import "../static/style.css";
 import CardTeamMember from "../components/CardTeamMember";
 import team_members from "../const/const_team_members";
+import "../static/style.css";
 
 const SectionTeam = () => {
   const [t] = useTranslation("translation");

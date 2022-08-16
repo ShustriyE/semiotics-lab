@@ -134,19 +134,10 @@ const ContactUs = () => {
           <AlertW alertMessage={msg} key={`alert_${ind}`} />
         ))}
       </Stack>
-      <Box
-        style={{
-          margin: "3vw 0",
-        }}
-      >
+      <Box className="contactUs-box">
         <div className="contact-us--box">
           <div>
-            <Card
-              sx={{ maxWidth: "38vw", maxHeight: "34.2em" }}
-              style={{
-                marginRight: "4.8vw",
-              }}
-            >
+            <Card className="contactUs-box-left">
               <a
                 href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%86%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%82%D1%81%D1%8C%D0%BA%D0%B0,+18,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.44542,30.5297598,17z/data=!4m5!3m4!1s0x40d4cfacb6c2d3c7:0x6ca1da62cf62c8b6!8m2!3d50.44542!4d30.5319485"
                 target="_blank"
@@ -200,25 +191,13 @@ const ContactUs = () => {
             </Card>
           </div>
           <div>
-            <Card
-              style={{
-                boxShadow: "none",
-              }}
-              className="contact-us--box-form"
-            >
+            <Card className="contact-us--box-form contactUs-box-right">
               <CardContent className="contact-us--formbox">
                 <Typography
                   gutterBottom
                   variant="h5"
                   component="div"
                   className="contact-us--form-header"
-                  style={{
-                    fontFamily: "Montserrat",
-                    fontWeight: "600",
-                    fontSize: "1.4vw",
-                    lineHeight: "1.8vw",
-                    color: "#1C1C1C",
-                  }}
                 >
                   {t("ContactUsHeader")}
                 </Typography>
@@ -234,9 +213,7 @@ const ContactUs = () => {
                       autoComplete="name"
                       label={t("Name")}
                       autoFocus={false}
-                      style={{
-                        marginBottom: "0.5vw",
-                      }}
+                      className="contactUs--container-input-name"
                     />
                   </Grid>
                   <Grid item className="contactUs--container-input">
@@ -256,15 +233,8 @@ const ContactUs = () => {
                       error={errorText !== ""}
                       /* @ts-ignore */
                       // helperText={errorText}
-
                       autoFocus={false}
-                      style={{
-                        marginBottom: "0.5vw",
-                        paddingLeft: "0",
-                        paddingRight: "0",
-                        paddingTop: "0",
-                        paddingBottom: "0",
-                      }}
+                      className="contactUs--container-input-email"
                     />
                   </Grid>
                   <Grid item className="contactUs--container-input">
@@ -279,35 +249,15 @@ const ContactUs = () => {
                       autoFocus={false}
                       multiline
                       rows={6}
-                      style={{
-                        marginBottom: "0.5vw",
-                      }}
+                      className="contactUs--container-input-message"
                     />
                   </Grid>
-
-                  <Grid item>
+                  <Grid item className="contactUs--container-input">
                     <Button
                       variant="contained"
                       onClick={sendRequest}
                       color="secondary"
-                      className="contactUsMapBlock--button"
-                      style={{
-                        display: "flex",
-                        flexDirection: "row",
-                        alignItems: "center",
-                        gap: "0.5vw",
-                        width: "9.5vw",
-                        height: "2.9vw",
-                        background: "#FF7438",
-                        borderRadius: "0.8vw",
-                        fontFamily: "Inter",
-                        fontWeight: "700",
-                        fontSize: "0.9vw",
-                        textAlign: "center",
-                        textTransform: "uppercase",
-                        color: "#FFFFFF",
-                        whiteSpace: "nowrap",
-                      }}
+                      className="contactUs--container-input-button"
                     >
                       {t("ContactUsBtn")}
                       <img

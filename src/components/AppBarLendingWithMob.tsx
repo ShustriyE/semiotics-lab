@@ -65,12 +65,12 @@ export default function AppBarLendingWithMob() {
       linkTo: "#aboutUs",
     },
     {
-        title: t("projects"),
-        linkTo: "#projects",
+      title: t("projects"),
+      linkTo: "#projects",
     },
     {
-        title: t("team"),
-        linkTo: "#team",
+      title: t("team"),
+      linkTo: "#team",
     },
     {
       title: t("feedback"),
@@ -83,56 +83,26 @@ export default function AppBarLendingWithMob() {
   window.addEventListener("scroll", handleScroll);
 
   return (
-    <header
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
+    <header>
       {/*<CssBaseline/>*/}
       {/*<HideOnScroll {...props}>*/}
       <AppBar
         position="absolute"
+        className="header-appbar"
         // position="fixed"
-        style={{
-          background: "transparent",
-          boxShadow: "none",
-          padding: "0",
-          margin: "0",
-          width: "90vw",
-          maxWidth: "100%",
-        }}
-        sx={{
-          width: "100%",
-          mx: "auto",
-        }}
+        // sx={{
+        //   width: "100%",
+        //   mx: "auto",
+        // }}
       >
-        <Container
-          style={{
-            paddingLeft: "0",
-            paddingRight: "0",
-            width: "90vw",
-            maxWidth: "100%",
-          }}
-        >
-          <Toolbar
-            style={{
-              paddingLeft: "0",
-              paddingRight: "0",
-              width: "90vw",
-              maxWidth: "100%",
-            }}
-          >
+        <Container className="header-appbar-box">
+          <Toolbar className="header-appbar-box-toolbar">
             <img
               id="logo-pos"
               src={"/icons/logo_main.svg"}
               alt="logo"
               onClick={() => setNewClick(countClick + 1)}
-              style={{
-                width: "15vw",
-                margin: "0",
-              }}
+              className="header-appbar-logo"
             />
 
             {/*<Box sx={{flexGrow:10}}/>*/}
@@ -140,8 +110,9 @@ export default function AppBarLendingWithMob() {
               display="flex"
               justifyContent="flex-end"
               alignItems="center"
-              sx={{ flexGrow: 2, display: { xs: "flex", md: "none" } }}
+              sx={{ flexGrow: 2, display: { xs: "flex", md: "none" } }} 
             >
+              <LanguagesSelector />
               <div id="block-lang-menu-pos">
                 <IconButton
                   size="large"
@@ -180,14 +151,14 @@ export default function AppBarLendingWithMob() {
                       <Link
                         href={page.linkTo}
                         underline="none"
-                        sx={{ color: "#000000" }}
+                        sx={{ color: "#000000"}}
                       >
                         {page.title}
                       </Link>
                     </MenuItem>
                   ))}
                 </Menu>
-                <LanguagesSelector />
+                
               </div>
             </Box>
             <Box

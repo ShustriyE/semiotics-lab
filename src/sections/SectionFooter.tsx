@@ -1,9 +1,9 @@
 import React from "react";
-import "../static/style.css";
 import copy from "clipboard-copy";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { useTranslation } from "react-i18next";
+import "../static/style.css";
 
 const SectionFooter = () => {
   const [t] = useTranslation("translation");
