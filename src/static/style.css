@@ -268,7 +268,7 @@ header img[alt="logo"] {
 }
 
 #projects .card .button {
-  font-family: "Helvetica Neue";
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.1vw;
   line-height: 1.7vw;
@@ -1149,6 +1149,16 @@ footer {
 
   /* contact-us */
 
+  #contact-us .err-contactUs div div div div {
+    font-size: 2vw;
+    line-height: 2.5vw;
+  }
+
+  #contact-us .err-contactUs div div div div div button svg {
+    width: 2vw;
+    height: 2vw;
+  }
+
   .contactUsMapBlock--header {
     font-size: 1.5vw;
     line-height: 2vw;
@@ -1740,6 +1750,16 @@ footer {
   }
 
   /* contact-us */
+
+  #contact-us .err-contactUs div div div div {
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+
+  #contact-us .err-contactUs div div div div div button svg {
+    width: 4vw;
+    height: 4vw;
+  }
 
   .contact-us--box {
     display: flex;

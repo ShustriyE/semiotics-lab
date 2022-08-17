@@ -17,6 +17,7 @@ import Alert from "@mui/material/Alert";
 import Stack from "@mui/material/Stack";
 import CloseIcon from "@mui/icons-material/Close";
 import AlertTitle from "@mui/material/AlertTitle";
+import { spawn } from "child_process";
 
 interface State {
   name: string;
@@ -127,13 +128,54 @@ const ContactUs = () => {
     }
   };
 
+  React.useEffect(() => {
+    function handleResize() {
+      setWidth(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+  });
+
+
+
+
+
+
+  const ErrMessageDesc = () => {
+      if(width > 912) {
+        return (
+          <Stack 
+          sx={{ width: "100%" }}
+          className="err-contactUs">
+          {alerts.map((msg, ind) => (
+            <AlertW alertMessage={msg} key={`alert_${ind}`} />
+          ))}
+        </Stack>
+        )
+      } else {
+        return (<span style={{display: "none"}}></span>)
+      }
+  }
+  const ErrMessageMob = () => {
+      if(width <= 912) {
+        return (
+          <Stack 
+          sx={{ width: "100%" }}
+          className="err-contactUs">
+          {alerts.map((msg, ind) => (
+            <AlertW alertMessage={msg} key={`alert_${ind}`} />
+          ))}
+        </Stack>
+        )
+      } else {
+        return (<span style={{display: "none"}}></span>)
+      }
+  }
+  
+
   return (
     <section id="contact-us">
-      <Stack sx={{ width: "100%" }}>
-        {alerts.map((msg, ind) => (
-          <AlertW alertMessage={msg} key={`alert_${ind}`} />
-        ))}
-      </Stack>
+      <ErrMessageDesc />
       <Box className="contactUs-box">
         <div className="contact-us--box">
           <div>
@@ -190,6 +232,7 @@ const ContactUs = () => {
               </a>
             </Card>
           </div>
+          <ErrMessageMob />
           <div>
             <Card className="contact-us--box-form contactUs-box-right">
               <CardContent className="contact-us--formbox">
