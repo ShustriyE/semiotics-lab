@@ -836,86 +836,41 @@ footer {
 }
 
 .footer--left img {
-  width: 20vw;
+  max-width: 25vw;
 }
 
-.footer--list {
-  padding: 0;
-  list-style: none;
+.footer--center {
   display: flex;
 }
 
-.footer--list-item {
-  margin-right: 10%;
-  white-space: nowrap;
-}
-
-.footer--list-item a {
-  text-decoration: none;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 85%;
-  line-height: 85%;
-  color: #969696;
-}
-
-.footer--list-item a:hover {
-  text-decoration: underline;
-}
-
-.footer--right {
-  display: flex;
-}
-
-.footer--right-container--left {
+.footer--center-container {
   display: flex;
   flex-direction: column;
-  width: 16.5vw;
+  max-width: 25vw;
+  gap: 0.4vw;
 }
-
-.container--left-box {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 8%;
-}
-
-.container--left-header {
+.center--container-header {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 85%;
   line-height: 140%;
   color: #969696;
 }
-
-.container--left--social-box {
-  display: flex;
-}
-
-.container--left--social {
-  margin-right: 2.5%;
-}
-
-.container--left--social + a {
-  margin-right: 0;
-}
-
-.container--left--phone {
+.center--container-phone {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 97%;
   line-height: 150%;
   color: #585757;
 }
-
-.container--left--email {
+.center--container-email {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 97%;
   line-height: 150%;
   color: #ff8364;
 }
-
-.container--left--social {
+.center--container-adress {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 97%;
@@ -923,32 +878,23 @@ footer {
   color: #585757;
 }
 
-.footer--right-container--right {
-  display: flex;
-  flex-direction: column;
-  width: 16.5vw;
+.footer--right {
+  max-width: 25vw;
 }
-
-.container--right-box {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 8%;
-}
-
-.container--right-header {
+.footer--right-text {
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 85%;
-  line-height: 140%;
-  color: #969696;
-}
-
-.container--right-adress {
-  font-family: "Montserrat";
-  font-weight: 400;
-  font-size: 97%;
+  font-size:0.9vw;
   line-height: 150%;
   color: #585757;
+}
+.footer--right-copywriting {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1vw;
+  line-height: 1.5vw;
+  color: #1c1c1c;
 }
 
 @media only screen and (min-device-width: 1200px) {
@@ -987,40 +933,20 @@ footer {
     height: auto;
   }
 
-  header
-    div
-    .header-appbar-box-toolbar
-    div 
-    div 
-    div
-   {
+  header div .header-appbar-box-toolbar div div div {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
     padding-bottom: 0;
   }
 
-  header
-    div
-    .header-appbar-box-toolbar
-    div 
-    div 
-    div
-    div
-   {
+  header div .header-appbar-box-toolbar div div div div {
     font-size: 4vw;
     line-height: 5vw;
     margin-right: 2vw;
   }
 
-  header
-    div
-    .header-appbar-box-toolbar
-    div 
-    div 
-    div
-    svg
-   {
+  header div .header-appbar-box-toolbar div div div svg {
     font-size: 7vw;
   }
 
@@ -1028,12 +954,12 @@ footer {
     height: 8vw;
     width: 8vw;
   }
-  
+
   #menu-appbar li {
     font-size: 4vw;
     line-height: 5vw;
   }
-  
+
   #menu- li {
     font-size: 4vw;
     line-height: 5vw;
@@ -1059,7 +985,12 @@ footer {
   }
 
   .hero-section-btn--cb {
-    display: none;
+    width: 50vw;
+    font-size: 3vw;
+    line-height: 4vw;
+    padding: 2vw 0;
+    margin-left: 3vw;
+    margin-top: 3vw;
   }
 
   .scroll {
@@ -1440,7 +1371,21 @@ footer {
     font-size: 3vw;
     line-height: 4vw;
   }
-  
+
+  #contact-us
+    .contactUs-box
+    .contact-us--box
+    .contactUs-box-right
+    .contact-us--formbox
+    div
+    .contactUs--container-input
+    .contactUs--container-input-name
+    div
+    input {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+
   #contact-us
     .contactUs-box
     .contact-us--box
@@ -1490,6 +1435,20 @@ footer {
     div
     .contactUs--container-input
     .contactUs--container-input-email
+    div
+    input {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+
+  #contact-us
+    .contactUs-box
+    .contact-us--box
+    .contactUs-box-right
+    .contact-us--formbox
+    div
+    .contactUs--container-input
+    .contactUs--container-input-email
     legend {
     font-size: 3vw;
     line-height: 3vw;
@@ -1518,7 +1477,21 @@ footer {
     font-size: 3vw;
     line-height: 4vw;
   }
-  
+
+  #contact-us
+    .contactUs-box
+    .contact-us--box
+    .contactUs-box-right
+    .contact-us--formbox
+    div
+    .contactUs--container-input
+    .contactUs--container-input-message
+    div
+    textarea {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+
   #contact-us
     .contactUs-box
     .contact-us--box
@@ -1552,58 +1525,60 @@ footer {
   /* footer */
 
   #footer {
-    height: 25vh;
-  }
-
-  .footer--left {
-    display: none;
-  }
-
-  .footer--left img {
-    display: none;
-  }
-
- .footer--right {
-    display: flex;
+    height: 35vh;
     width: 90vw;
+    flex-wrap: wrap;
+    gap: 5vw;
+    padding: 5vw 0;
+  }
+  
+  .footer--left {
+    max-width: 30vw;
+  }
+  
+  .footer--left img {
+    max-width: 30vw;
+  }
+  
+  .footer--center {
+    display: flex;
+    max-width: 55vw;
     margin: auto;
   }
-
-  .footer--right-container--left {
-    width: 45vw;
+  
+  .footer--center-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 55vw;
+    gap: 0.4vw;
   }
-
-  .container--left-header {
-    font-size: 2vw;
-    line-height: 3vw;
-  }
-
-  .container--left--phone {
+  .center--container-header {
     font-size: 3vw;
     line-height: 4vw;
   }
-
-  .container--left--email {
+  .center--container-phone {
+    font-size: 4vw;
+    line-height: 4vw;
+  }
+  .center--container-email {
+    font-size: 4vw;
+    line-height: 4vw;
+  }
+  .center--container-adress {
+    font-size: 4vw;
+    line-height: 4vw;
+  }
+  
+  .footer--right {
+    max-width: 90vw;
+    margin: auto;
+  }
+  .footer--right-text {
     font-size: 3vw;
     line-height: 4vw;
   }
-
-  .container--left--social {
-    font-size: 3vw;
-    line-height: 4vw;
-  }
-
-  .footer--right-container--right {
-    width: 45vw;
-  }
-
-  .container--right-header {
-    font-size: 2vw;
-    line-height: 3vw;
-  }
-
-  .container--right-adress {
-    font-size: 3vw;
-    line-height: 4vw;
+  .footer--right-copywriting {
+    font-size: 4vw;
+    line-height: 5vw;
   }
 }
