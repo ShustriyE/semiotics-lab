@@ -826,7 +826,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 35vh;
+  min-height: 35vh;
+  max-height: 55vh;
 }
 
 .footer--left {
@@ -897,7 +898,7 @@ footer {
   color: #1c1c1c;
 }
 
-@media only screen and (max-device-width: 1200px) {
+@media all and (max-width: 1200px) {
   header,
   #hero-section,
   #aboutUs,
@@ -1322,7 +1323,8 @@ footer {
   /* footer */
 
   #footer {
-    height: 50vh;
+    min-height: 40vh;
+    max-height: 70vh;
     width: 90vw;
     flex-wrap: wrap;
     gap: 5vw;
@@ -1380,7 +1382,7 @@ footer {
   }
 }
 
-@media only screen and (max-device-width: 912px) {
+@media all and (max-width: 912px) {
   header,
   #hero-section,
   #aboutUs,
@@ -1994,7 +1996,8 @@ footer {
   /* footer */
 
   #footer {
-    height: 35vh;
+    min-height: 30vh;
+    max-height: 75vh;
     width: 90vw;
     flex-wrap: wrap;
     gap: 5vw;
