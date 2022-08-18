@@ -651,17 +651,19 @@ header img[alt="logo"] {
 }
 
 .contactUsMapLink {
+  display: block;
   position: relative;
 }
 
 .contactUsMapBlock {
-  width: 30vw;
-  height: 30%;
+  min-height: 30%;
+  max-height: 50%;
   background-color: #fff;
   z-index: 1;
   position: absolute;
   bottom: 8vw;
   left: 4vw;
+  right: 4vw;
   background: #ffffff;
   border-radius: 0.5vw;
   display: flex;
@@ -1177,12 +1179,12 @@ footer {
 
   .contactUsMapBlock--adress-link,
   .contactUsMapBlock---phone-link {
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     line-height: 2vw;
   }
 
   .contactUsMapBlock--email-link {
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     line-height: 2vw;
   }
 
